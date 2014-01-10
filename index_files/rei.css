@@ -1327,7 +1327,7 @@ ul.topics{
 .yamm-fw ul.topics li a:hover i, .yamm-fw ul.topics li a:focus i{background-color:transparent!important;border-radius:0;}
 .navbar-default ul#menu-primary-navigation.nav.navbar-nav > li.active a, 
 .navbar-default ul#menu-primary-navigation.nav.navbar-nav > li a:hover, 
-.navbar-default ul#menu-primary-navigation.nav.navbar-nav > li a:focus{transition:none;border-bottom:0px!important;}
+.navbar-default ul#menu-primary-navigation.nav.navbar-nav > li a:focus{border-bottom:0px!important;}
 .navbar-brand, .logo-brand {
   background: url("//next.data.gov/wp-content/themes/roots-nextdatagov/assets/img/logo.png") no-repeat scroll center center / contain  rgba(0, 0, 0, 0) !important;
   margin-left: 15px;
