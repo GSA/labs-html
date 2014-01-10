@@ -1335,3 +1335,4 @@ ul.topics{
   text-indent: -9999em;
   width: 200px;
 }
+.navbar-default ul#menu-primary-navigation.nav.navbar-nav > li > a, .navbar-default ul#menu-primary-navigation.nav.navbar-nav > li.dropdown.open > ul.dropdown-menu > li a, .navbar-default ul#menu-primary-navigation.nav.navbar-nav > li.dropdown > ul.dropdown-menu > li a:hover, .navbar-default ul#menu-primary-navigation.nav.navbar-nav > li.dropdown > ul.dropdown-menu > li a:focus{border-bottom:none;}
