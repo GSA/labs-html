@@ -13,25 +13,25 @@
     <link rel="stylesheet" href="index_files/rei.css">
     <script type="text/javascript" src="index_files/flowplayer-3.js"></script>
     <script type="text/javascript" src="index_files/jquery_002.js"></script>
-    <script>window.jQuery || document.write('<script src="http://data.gov/wp-content/themes/roots-nextdatagov/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="//data.gov/wp-content/themes/roots-nextdatagov/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script type="text/javascript" src="index_files/smartpaginator.js"></script>
     <script type="text/javascript" src="index_files/jquery-tablesorter-min.js"></script>
     <script type="text/javascript" src="index_files/jsapi.txt"></script>
     <script type="text/javascript" src="index_files/modernizr-2.js"></script>
     <!-- Q & A -->
-    <noscript><link rel="stylesheet" type="text/css" href="http://data.gov/wp-content/plugins/q-and-a/css/q-a-plus-noscript.css?ver=1.0.6.2" /></noscript><!-- Q & A -->	<link rel="canonical" href="http://data.gov/">
+    <noscript><link rel="stylesheet" type="text/css" href="//data.gov/wp-content/plugins/q-and-a/css/q-a-plus-noscript.css?ver=1.0.6.2" /></noscript><!-- Q & A -->	<link rel="canonical" href="//data.gov/">
 
-    <link rel="alternate" type="application/rss+xml" title="Data.Gov 2.0 Feed" href="http://data.gov/feed/">
+    <link rel="alternate" type="application/rss+xml" title="Data.Gov 2.0 Feed" href="//data.gov/feed/">
     <link href="index_files/favicon.ico" rel="shortcut icon">
     <link rel="icon" type="image/png" href="favicon-120.png" sizes="120x120">
 </head>
 <body class="home page">
 <!-- <div class="banner disclaimer">
-    <p></p><center>This is a demonstration site exploring the future of Data.gov. <span id="stop-disclaimer"> Give us your feedback on <a href="https://twitter.com/usdatagov">Twitter</a>, <a href="http://quora.com/">Quora</a></span>, <a href="https://github.com/GSA/datagov-design/">Github</a>, or <a href="http://data.gov/contact-us">contact us</a></center><p></p>
+    <p></p><center>This is a demonstration site exploring the future of Data.gov. <span id="stop-disclaimer"> Give us your feedback on <a href="//twitter.com/usdatagov">Twitter</a>, <a href="//quora.com/">Quora</a></span>, <a href="//github.com/GSA/datagov-design/">Github</a>, or <a href="//data.gov/contact-us">contact us</a></center><p></p>
 </div> -->
 <!--[if lt IE 8]>
 <div class="alert alert-warning">
-    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.    </div>
+    You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.    </div>
 <![endif]-->
 
 <header>
@@ -43,7 +43,7 @@
                     <a href="#content" title="">Jump to Content</a>
                 </div>
                 <div>
-                    <!-- <form action="http://catalog.data.gov/dataset/" class="search-form form-inline navbar-right navbar-nav  col-sm-6 col-md-6 col-lg-6" method="get" role="search">
+                    <!-- <form action="//catalog.data.gov/dataset/" class="search-form form-inline navbar-right navbar-nav  col-sm-6 col-md-6 col-lg-6" method="get" role="search">
 
                   <div class="input-group">
                       <label for="search-header" class="hide">Search for:</label>
@@ -58,7 +58,7 @@
                   </div>
                 </form>-->
 
-                    <form class="search-form form-inline navbar-right navbar-nav  col-sm-6 col-md-6 col-lg-6" method="get" role="search" action="http://catalog.data.gov/dataset" >
+                    <form class="search-form form-inline navbar-right navbar-nav  col-sm-6 col-md-6 col-lg-6" method="get" role="search" action="//catalog.data.gov/dataset" >
                         <div class="input-group">
                             <label for="search-header" class="hide">Search for:</label>
                             <input type="search" placeholder="Credit Card Complaints" class="search-field form-control" name="q"  id="search-header">
@@ -80,7 +80,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://www.data.gov">Data.Gov 2.0</a>
+                <a class="navbar-brand" href="//www.data.gov">Data.Gov 2.0</a>
             </div>
 
             <nav class="collapse navbar-collapse" role="navigation">
@@ -129,64 +129,69 @@
                             functionality.  Agencies are encouraged to improve any project and
                         submit pull requests in order to share the improvements with others.</p>
 
-                        <h2 style="font-size:25px;">Simple API<a name="simple-api"></a></h2>
-                        <p>
-                            Simple API is about empowering a controlled group with the ability to deploy simple APIs, without deploying any infrastructure. Users can select from a pre-defined set of API designs.
-                            Each API design lives as a Github repository and uses a JSON file as a data store. The API design is generated using Swagger. Each repository contains a JSON data store, Swagger API definition and a home page to view and interact with API through its documentation.
-                        </p>
+                        <!-------------------------------Catalog Generator----------------------------------->
+                        <h2 style="font-size:25px;">Catalog Generator<a name="generator"></a></h2>
+                        <p>Generate an agency's data.json file.</p>
                         <ul>
-                            <li><a href="https://github.com/simple-api">Source Code and Documentation</a></li>
-                            <li><a href="http://simple-api.github.io/api-offices/">Hosted Tool</a></li>
+                            <li><a href="//github.com/project-open-data/catalog-generator">Source Code and Documentation</a></li>
+                            <li><a href="//project-open-data.github.com/catalog-generator/">Hosted Tool</a></li>
                         </ul>
 
+                        <!-----------------------------Catalog Validator------------------------------------->
+                        <h2 style="font-size:25px;">Catalog Validator<a name="validator"></a></h2>
+                        <p>Validate the agency's data.json file.</p>
+                        <ul>
+                            <li><a href="//github.com/project-open-data/json-validator">Source Code and Documentation</a></li>
+                            <li><a href="//project-open-data.github.com/json-validator/">Hosted Tool</a></li>
+                        </ul>
+
+                        <!-------------------------------CSV-to-API----------------------------------->
+                        <h2 style="font-size:25px;">CSV-to-API<a name="csv-to-api"></a></h2>
+                        <p>Dynamically generate RESTful APIs from static CSVs. Provides JSON, XML, and HTML.</p>
+                        <ul>
+                            <li><a href="//github.com/project-open-data/csv-to-api">Source Code and Documentation</a></li>
+                            <li><a href="/csv-to-api/">Hosted Tool</a></li>
+                        </ul>
+
+                        <!--------------------------------DataBeam---------------------------------->
                         <h2 style="font-size:25px;">DataBeam<a name="data-beam"></a></h2>
                         <p>
                             Dynamically generate RESTful APIs from the contents of database tables or CSV files. Provides JSON, XML, CSV, and HTML output and autogenerated documentation. Supports most popular databases.
                         </p>
                         <ul>
-                            <li><a href="https://github.com/philipashlock/DataBeam">Source Code and Documentation</a></li>
-                            <li><a href="http://www.databeam.org/">Hosted Tool</a></li>
+                            <li><a href="//github.com/philipashlock/DataBeam">Source Code and Documentation</a></li>
+                            <li><a href="//www.databeam.org/">Hosted Tool</a></li>
                         </ul>
 
-                        <h2 style="font-size:25px;">CSV-to-API<a name="csv-to-api"></a></h2>
-                        <p>Dynamically generate RESTful APIs from static CSVs. Provides JSON, XML, and HTML.</p>
-                        <ul>
-                            <li><a href="https://github.com/project-open-data/csv-to-api">Source Code and Documentation</a></li>
-                            <li><a href="/csv-to-api/">Hosted Tool</a></li>
-                        </ul>
-
+                        <!------------------------------DB-to-API------------------------------------>
                         <h2 style="font-size:25px;">DB-to-API<a name="db-to-api"></a></h2>
                         <p>Turns a Database into a Secure, RESTful API.</p>
                         <ul>
-                            <li><a href="https://github.com/project-open-data/db-to-api">Source Code and Documentation</a></li>
+                            <li><a href="//github.com/project-open-data/db-to-api">Source Code and Documentation</a></li>
                             <li><a href="/db-to-api/readme.md">Hosted Tool</a></li>
                         </ul>
 
+                        <!--------------------------------PDF-Filler---------------------------------->
                         <h2 style="font-size:25px;">PDF-Filler<a name="pdf-filler"></a></h2>
                         <p>PDF Filler is a RESTful service
                             (API) to aid in the completion of existing PDF-based forms and empowers
                             web developers to use browser-based forms and modern web standards to
                             facilitate the collection of information.</p>
                         <ul>
-                            <li><a href="https://github.com/project-open-data/pdf-filler">Source Code and Documentation</a></li>
+                            <li><a href="//github.com/project-open-data/pdf-filler">Source Code and Documentation</a></li>
                             <li><a href="/pdf-filler/">Hosted Tool</a></li>
                         </ul>
 
-                        <h2 style="font-size:25px;">Catalog Generator<a name="generator"></a></h2>
-                        <p>Generate an agency's data.json file.</p>
+                        <!-------------------------------Simple API----------------------------------->
+                        <h2 style="font-size:25px;">Simple API<a name="simple-api"></a></h2>
+                        <p>
+                            Simple API is about empowering a controlled group with the ability to deploy simple APIs, without deploying any infrastructure. Users can select from a pre-defined set of API designs.
+                            Each API design lives as a Github repository and uses a JSON file as a data store. The API design is generated using Swagger. Each repository contains a JSON data store, Swagger API definition and a home page to view and interact with API through its documentation.
+                        </p>
                         <ul>
-                            <li><a href="https://github.com/project-open-data/catalog-generator">Source Code and Documentation</a></li>
-                            <li><a href="http://project-open-data.github.com/catalog-generator/">Hosted Tool</a></li>
+                            <li><a href="//github.com/simple-api">Source Code and Documentation</a></li>
+                            <li><a href="//simple-api.github.io/api-offices/">Hosted Tool</a></li>
                         </ul>
-
-                        <h2 style="font-size:25px;">Catalog Validator<a name="validator"></a></h2>
-                        <p>Validate the agency's data.json file.</p>
-                        <ul>
-                            <li><a href="https://github.com/project-open-data/json-validator">Source Code and Documentation</a></li>
-                            <li><a href="http://project-open-data.github.com/json-validator/">Hosted Tool</a></li>
-                        </ul>
-
-
 
                     </div>
                     <!-- /main-wrapper -->
@@ -216,7 +221,7 @@
 
 
 
-                <form action="http://catalog.data.gov/dataset" class="search-form form-inline" method="get" role="search">
+                <form action="//catalog.data.gov/dataset" class="search-form form-inline" method="get" role="search">
                     <div class="input-group">
                         <label for="search-header" class="hide">Search for:</label>
 
@@ -231,7 +236,7 @@
                     </div></form>
 
                 <div class="footer-logo">
-                    <a class="logo-brand" href="http://data.gov/">Data.Gov 2.0</a>
+                    <a class="logo-brand" href="//data.gov/">Data.Gov 2.0</a>
                 </div>
 
             </div>
@@ -249,8 +254,8 @@
             <div class="col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 social-nav">
                 <nav role="navigation">
                     <ul id="menu-social_navigation" class="nav">
-                        <li><a href="https://twitter.com/usdatagov"><!-- <i class="fa fa-twitter"></i> --><img src="index_files/twitter.png"><span>Twitter</span></a></li>
-                        <li><a href="http://github.com/GSA/data.gov/"><img src="index_files/github.png"><span>Github</span></a></li>
+                        <li><a href="//twitter.com/usdatagov"><!-- <i class="fa fa-twitter"></i> --><img src="index_files/twitter.png"><span>Twitter</span></a></li>
+                        <li><a href="//github.com/GSA/data.gov/"><img src="index_files/github.png"><span>Github</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -263,7 +268,7 @@
 </body>
 <script type="text/javascript">
     (function($) {
-        var url = '//next.data.gov/wp-content/plugins/datagov-custom/wp_download_links.php?callback=?';
+        var url = '//www.data.gov/wp-content/plugins/datagov-custom/wp_download_links.php?callback=?';
         $.ajax({
             type: 'GET',
             url: url,
@@ -278,6 +283,9 @@
                 var bottommenus=[];
                 $.each(json.Footer, function(i,menu){
                     menus.push('<li><a href="' +menu.link + '">' +menu.name + '</a></li>');
+                    if(menu.name=='Log In'){
+                        menus.push('<li style="display:none;"><a href="' +menu.link + '">' +menu.link + '">' +menu.name + '</a></li>');
+                    }
                 });
                 $.each(json.Primary, function(i,topmenu){
                     if(!topmenu.parent_id) {
@@ -285,7 +293,7 @@
                             topmenus.push('<li class="dropdown yamm-fw menu-topics"><a data-toggle="dropdown" class="dropdown-toggle">Topics<b class="caret"></b></a><ul class="dropdown-menu topics"></ul></li>');
                         }
                         else if(topmenu.name=='Data') {
-                            topmenus.push('<li class="active"><a href="http://catalog.data.gov/dataset">' +topmenu.name + '</a></li>');
+                            topmenus.push('<li class="active"><a href="//catalog.data.gov/dataset">' +topmenu.name + '</a></li>');
                         }
                         else{
                             topmenus.push('<li><a href="' +topmenu.link + '">' +topmenu.name + '</a></li>');
@@ -305,7 +313,7 @@
                             bottommenus.push('<li class="dropdown menu-topics"><a data-toggle="dropdown" class="dropdown-toggle">Topics<b class="caret"></b></a><ul class="dropdown-menu"></ul></li>');
                         }
                         else if(bottommenu.name=='Data') {
-                            bottommenus.push('<li class="active"><a href="http://catalog.data.gov/dataset">' +bottommenu.name + '</a></li>');
+                            bottommenus.push('<li class="active"><a href="//catalog.data.gov/dataset">' +bottommenu.name + '</a></li>');
                         }
                         else{
                             bottommenus.push('<li><a href="' +bottommenu.link + '">' +bottommenu.name + '</a></li>');
