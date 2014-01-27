@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "office": "Western Region Office",
+        "address_1": "223 Acme Lane",
+        "address_2": "",
+        "city": "Walla Walla",
+        "state": "Washington",
+        "zip": "99929",
+        "phone": "555-523-2233",
+        "email": "westernregion@agency.gov"
+    },
+    {
+    	"id": "2",
+        "office": "Soutern Region Office",
+        "address_1": "1192 Smith Street",
+        "address_2": "Suite 2200",
+        "city": "Billsworth",
+        "state": "Tennessee",
+        "zip": "43022",
+        "phone": "555-232-3323",
+        "email": "southernregionhq@agency.gov"
+    },
+    {
+    	"id": "3",
+        "office": "Headquarters",
+        "address_1": "19809 3rd Ave. ",
+        "address_2": "",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20006",
+        "phone": "555-233-9499",
+        "email": "headquarters@agency.gov"
+    }
+]
