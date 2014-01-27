@@ -47,7 +47,7 @@ define('API_URL', $_SERVER["SCRIPT_URL"].'api');
 
         $(function () {
             window.swaggerUi = new SwaggerUi({
-                url: "<?= SCRIPT_URL ?>" + $Path,
+                url: "<?php echo SCRIPT_URL; ?>" + $Path,
                 dom_id: "swagger-ui-container",
                 supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
                 onComplete: function(swaggerApi, swaggerUi){
