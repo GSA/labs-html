@@ -1,8 +1,8 @@
 {
     "apiVersion": "1.0",
     "swaggerVersion": "1.2",
-    "basePath":  "http://local.labs.data.gov/simple-api/api",
-    "resourcePath": "/simple-api/offices.json",
+    "basePath":  "/simple-api/api",
+    "resourcePath": "/simple-api/api-offices/offices.json",
     "produces": [
         "application/json"
     ],
