@@ -1,8 +1,11 @@
 <?php
 
+
+
+define('SCRIPT_URI', $_SERVER['SCRIPT_URI']);
 define('REQUEST_URI', $_SERVER["REQUEST_URI"]);
-define('API_URL', $_SERVER["SCRIPT_URL"].'api');
-    
+define('API_URL', str_replace('/api-offices', '/api', $_SERVER["SCRIPT_URL"]));
+
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -47,7 +50,7 @@ define('API_URL', $_SERVER["SCRIPT_URL"].'api');
 
         $(function () {
             window.swaggerUi = new SwaggerUi({
-                url: "<?php echo REQUEST_URI; ?>" + $Path,
+                url: "<?php echo SCRIPT_URI; ?>" + $Path,
                 dom_id: "swagger-ui-container",
                 supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
                 onComplete: function(swaggerApi, swaggerUi){
