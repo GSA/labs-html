@@ -55,27 +55,13 @@ header("X-FRAME-OPTIONS: DENY");
                     <a href="#content" title="">Jump to Content</a>
                 </div>
                 <div>
-                    <!-- <form action="//catalog.data.gov/dataset/" class="search-form form-inline navbar-right navbar-nav  col-sm-6 col-md-6 col-lg-6" method="get" role="search">
 
-                  <div class="input-group">
-                      <label for="search-header" class="hide">Search for:</label>
-                      <input type="search" placeholder="Credit Card Complaints" class="search-field form-control" name="q"  id="search-header">
-                      <span class="input-group-btn">
-                          <input type="submit" value="search" class="tfbutton">
-                     <button type="submit" class="search-submit btn btn-default">
-                      <img alt="search" src="index_files/search-icon.png" height="15px" width="15px">
-                           <span class="sr-only">Search</span>
-                       </button>
-                    </span>
-                  </div>
-                </form>-->
 
                     <form class="search-form form-inline navbar-right navbar-nav  col-sm-6 col-md-6 col-lg-6"
                           method="get" role="search" action="//catalog.data.gov/dataset">
                         <div class="input-group">
                             <label for="search-header" class="hide">Search for:</label>
-                            <input type="search" placeholder="Credit Card Complaints" class="search-field form-control"
-                                   name="q" id="search-header">
+                            <input type="search" placeholder="Search Data.Gov" class="search-field form-control" name="q" value="Search Data.Gov" id="search-header" onblur="if(value=='') value = 'Search Data.Gov'" onfocus="if(value=='Search Data.Gov') value = ''">
                 <span class="input-group-btn">
                 <button type="submit" class="search-submit btn btn-default">
                     <img alt="search" src="index_files/search-icon.png" height="15px" width="15px">
@@ -255,10 +241,7 @@ header("X-FRAME-OPTIONS: DENY");
                     <div class="input-group">
                         <label for="search-header" class="hide">Search for:</label>
 
-                        <input id="search-header"
-                               data-strings="{ &quot;targets&quot; : [&quot;Monthly House Price Indexes&quot;, &quot;Health Care Provider Charge Data&quot;, &quot;Credit Card Complaints&quot;, &quot;Manufacturing &amp; Trade Inventories &amp; Sales&quot;,&quot;Federal Student Loan Program Data&quot;]}"
-                               name="q" class="search-field form-control" placeholder="Search Data.Gov 2.0"
-                               type="search" value="">
+                        <input type="search" placeholder="Search Data.Gov" class="search-field form-control" name="q" value="Search Data.Gov" id="search-header" onblur="if(value=='') value = 'Search Data.Gov'" onfocus="if(value=='Search Data.Gov') value = ''">
       <span class="input-group-btn">
       <button type="submit" class="search-submit btn btn-default">
           <img alt="search" src="index_files/search-icon.png" height="15px" width="15px">
