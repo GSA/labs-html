@@ -1227,9 +1227,29 @@ ul.topics{
 }
 
 /*below are styles where we change icons to css */
-
-#menu-primary-navigation .menu-health a i:before{
-    content: "\e016";
+#menu-primary-navigation .menu-business a i:before{
+    content: "\e000";
+}
+#menu-primary-navigation .menu-cities a i:before{
+    content: "\e001";
+}
+#menu-primary-navigation .menu-climate a i:before{
+    content: "\e002"
+}
+#menu-primary-navigation .menu-consumer a i:before{
+    content: "\e003"
+}
+#menu-primary-navigation .menu-counties a i:before{
+    content: "\e004";
+}
+#menu-primary-navigation .menu-developers a i:before{
+    content: "\e005";
+}
+#menu-primary-navigation .menu-global a i:before{
+    content: "\e006"
+}
+#menu-primary-navigation .menu-education a i:before{
+    content: "\e007";
 }
 #menu-primary-navigation .menu-energy a i:before{
     content: "\e008";
@@ -1237,62 +1257,45 @@ ul.topics{
 #menu-primary-navigation .menu-ethics a i:before{
     content: "\e009";
 }
-#menu-primary-navigation .menu-education a i:before{
-    content: "\e007";
-}
+
 #menu-primary-navigation .menu-finance a i:before{
     content: "\e00a";
-}
-#menu-primary-navigation .menu-climate a i:before{
-    content: "\e002"
-}
-#menu-primary-navigation .menu-law a i:before{
-    content: "\e00f"
-}
-#menu-primary-navigation .menu-science a i:before{
-    content: "\e012";
-}
-#menu-primary-navigation .menu-public a i:before{
-    content: "\e013"
 }
 #menu-primary-navigation .menu-agriculture a i:before{
     content: "\e00b"
 }
-#menu-primary-navigation .menu-ocean a i:before{
-    content: "\e011"
-}
-#menu-primary-navigation .menu-global a i:before{
-    content: "\e006"
-}
-#menu-primary-navigation .menu-manufacturing a i:before{
-    content: "\e010";
-}
-#menu-primary-navigation .menu-consumer a i:before{
-    content: "\e003"
-}
-#menu-primary-navigation .menu-weather a i:before{
-    content: "\e015";
-}
 #menu-primary-navigation .menu-geospatial a i:before{
     content: "\e00c";
 }
+#menu-primary-navigation .menu-health a i:before{
+    content: "\e00d";
+}
+#menu-primary-navigation .menu-impact a i:before {
+    content: "\e00e"
+}
 #menu-primary-navigation .menu-jobs a i:before{
-    content: "\e00e";
+    content: "\e00f";
 }
-#menu-primary-navigation .menu-business a i:before{
-    content: "\e000";
+#menu-primary-navigation .menu-law a i:before{
+    content: "\e010"
 }
-#menu-primary-navigation .menu-counties a i:before{
-    content: "\e004";
+#menu-primary-navigation .menu-manufacturing a i:before{
+    content: "\e011";
+}
+#menu-primary-navigation .menu-ocean a i:before{
+    content: "\e012"
+}
+#menu-primary-navigation .menu-science a i:before{
+    content: "\e013";
+}
+#menu-primary-navigation .menu-public a i:before{
+    content: "\e014"
 }
 #menu-primary-navigation .menu-states a i:before{
-    content: "\e014";
+    content: "\e015";
 }
-#menu-primary-navigation .menu-cities a i:before{
-    content: "\e001";
-}
-#menu-primary-navigation .menu-developers a i:before{
-    content: "\e005";
+#menu-primary-navigation .menu-weather a i:before{
+    content: "\e016";
 }
 #menu-primary-navigation .menu-ecosystems:before {
     content: "\e017";
