@@ -367,7 +367,7 @@ header("X-FRAME-OPTIONS: DENY");
 
     jQuery(function ($) {
         jQuery(window).load(function () {
-            $("#menu-primary-navigation .dropdown").click(function () {
+           /* $("#menu-primary-navigation .dropdown").click(function () {
 
                 $("#menu-primary-navigation .dropdown-menu").toggle();
 
@@ -376,7 +376,144 @@ header("X-FRAME-OPTIONS: DENY");
 
                 $("#menu-primary-navigation-1 .dropdown-menu").toggle();
 
+            });*/
+            jQuery("#menu-primary-navigation .dropdown-toggle").click(function()
+            {
+
+                var X=jQuery("#menu-primary-navigation .dropdown-toggle").attr('id');
+                $("#menu-primary-navigation .dropdown-toggle").css("border-bottom","5px solid #DDE5ED");
+                if(X==1)
+
+                {
+
+                    jQuery("#menu-primary-navigation .dropdown-menu").hide();
+
+                    jQuery("#menu-primary-navigation .dropdown-toggle").attr('id', '0');
+
+                }
+
+                else
+
+                {
+
+                    jQuery("#menu-primary-navigation .dropdown-menu").show();
+
+                    jQuery("#menu-primary-navigation .dropdown-toggle").attr('id', '1');
+
+                }
+
+
+
             });
+
+
+
+//Mouse click on sub menu
+
+            jQuery("#menu-primary-navigation .dropdown-menu").click(function()
+
+            {
+
+                return false
+
+            });
+
+
+
+//Mouse click on my account link
+
+            jQuery("#menu-primary-navigation .dropdown-toggle").mouseup(function()
+
+            {
+
+                return false
+
+            });
+
+
+
+
+
+//Document Click
+
+            jQuery(document).mouseup(function()
+
+            {
+
+                jQuery("#menu-primary-navigation .dropdown-menu").hide();
+                jQuery("#menu-primary-navigation .dropdown-toggle").css("border-bottom","0");
+                jQuery("#menu-primary-navigation .dropdown-toggle").attr('id', '');
+
+            });
+            jQuery("#menu-primary-navigation-1 .dropdown-toggle").click(function()
+            {
+
+                var X=jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id');
+
+                if(X==1)
+
+                {
+
+                    jQuery("#menu-primary-navigation-1 .dropdown-menu").hide();
+
+                    jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id', '0');
+
+                }
+
+                else
+
+                {
+
+                    jQuery("#menu-primary-navigation-1 .dropdown-menu").show();
+
+                    jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id', '1');
+
+                }
+
+
+
+            });
+
+
+
+//Mouse click on sub menu
+
+            jQuery("#menu-primary-navigation-1 .dropdown-menu").click(function()
+
+            {
+
+                return false
+
+            });
+
+
+
+//Mouse click on my account link
+
+            jQuery("#menu-primary-navigation-1 .dropdown-toggle").mouseup(function()
+
+            {
+
+                return false
+
+            });
+
+
+
+
+
+//Document Click
+
+            jQuery(document).mouseup(function()
+
+            {
+
+                jQuery("#menu-primary-navigation-1 .dropdown-menu").hide();
+
+                jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id', '');
+
+            });
+
         });
     });
 </script>
