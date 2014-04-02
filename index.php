@@ -312,7 +312,7 @@ header("X-FRAME-OPTIONS: DENY");
                             topmenus.push('<li class="dropdown yamm-fw menu-topics"><a data-toggle="dropdown" class="dropdown-toggle">Topics<b class="caret"></b></a><ul class="dropdown-menu topics"></ul></li>');
                         }
                         else if (topmenu.name == 'Data') {
-                            topmenus.push('<li class="active"><a href="//catalog.data.gov/dataset">' + topmenu.name + '</a></li>');
+                            topmenus.push('<li class=""><a href="//catalog.data.gov/dataset">' + topmenu.name + '</a></li>');
                         }
                         else {
                             topmenus.push('<li><a href="' + topmenu.link + '">' + topmenu.name + '</a></li>');
@@ -332,7 +332,7 @@ header("X-FRAME-OPTIONS: DENY");
                             bottommenus.push('<li class="dropdown menu-topics"><a data-toggle="dropdown" class="dropdown-toggle">Topics<b class="caret"></b></a><ul class="dropdown-menu"></ul></li>');
                         }
                         else if (bottommenu.name == 'Data') {
-                            bottommenus.push('<li class="active"><a href="//catalog.data.gov/dataset">' + bottommenu.name + '</a></li>');
+                            bottommenus.push('<li class=""><a href="//catalog.data.gov/dataset">' + bottommenu.name + '</a></li>');
                         }
                         else {
                             bottommenus.push('<li><a href="' + bottommenu.link + '">' + bottommenu.name + '</a></li>');
