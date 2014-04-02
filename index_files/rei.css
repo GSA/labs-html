@@ -1326,3 +1326,8 @@ input.form-control {
     -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6)
 }
+.navbar{min-height: 105px;}
+ .navbar-default ul#menu-primary-navigation.nav.navbar-nav > li a:hover{border-bottom: 5px solid #DDE5ED;transition: none;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.yamm-fw ul.topics li a i{height:50px !important;}
+}
