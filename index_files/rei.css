@@ -1327,5 +1327,5 @@ input.form-control {
 .navbar{min-height: 105px;}
  .navbar-default ul#menu-primary-navigation.nav.navbar-nav > li a:hover{border-bottom: 5px solid #DDE5ED;transition: none;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-.yamm-fw ul.topics li a i{height:50px !important;}
+.yamm-fw ul.topics li a i{height:72px !important;}
 }
