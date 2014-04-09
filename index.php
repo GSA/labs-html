@@ -116,7 +116,7 @@ header("X-FRAME-OPTIONS: DENY");
                     <div class="content clearfix">
                         <!-- static content begin -->
                         <p style="margin-left:0px;">Welcome
-                            to DEV Labs.Data.gov, a repository of shared services to prototype and
+                            to Labs.Data.gov, a repository of shared services to prototype and
                             provide developer resources to government agencies. Each tool uses web
                             services and lightweight, open source code to provide powerful
                             functionality. Agencies are encouraged to improve any project and
