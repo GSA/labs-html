@@ -1167,7 +1167,7 @@ ul.topics li a i:hover {
 }
 .yamm-fw .dropdown-menu{
     min-width:970px;
-    left:-518px !important;
+    left:-420px !important;
     padding:10px 0;
 }
 .leaflet-top, .leaflet-bottom{z-index:10;}
