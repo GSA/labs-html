@@ -1,5 +1,23 @@
 <?php
 header("X-FRAME-OPTIONS: DENY");
+if (isset($_SERVER["SERVER_NAME"])) {
+    if (!isset($_GET['noredirect'])) {
+        switch ($_SERVER["SERVER_NAME"]) {
+            case 'data-labs-dev.reisys.com':
+                header('Location: http://dev-datagov.reisys.com/labs', true, 301);
+                exit;
+            case 'labs.data.gov':
+                header('Location: https://www.data.gov/labs', true, 301);
+                exit;
+            case 'local.labs.data.gov':
+                header('Location: http://local.data.gov/labs', true, 301);
+                exit;
+        }
+    }
+} else {
+    header('Location: https://www.data.gov/labs', true, 301);
+    exit;
+}
 ?><!DOCTYPE html>
 <html style=""
       class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
@@ -10,11 +28,9 @@ header("X-FRAME-OPTIONS: DENY");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Labs.Data.Gov</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="index_files/q-a-plus.css" media="screen">
     <link rel="stylesheet" href="index_files/css.css">
     <link rel="stylesheet" href="index_files/main.css">
-
     <link rel="stylesheet" href="index_files/rei.css">
     <script type="text/javascript" src="index_files/flowplayer-3.js"></script>
     <script type="text/javascript" src="index_files/jquery_002.js"></script>
@@ -30,7 +46,6 @@ header("X-FRAME-OPTIONS: DENY");
     </noscript>
     <!-- Q & A -->
     <link rel="canonical" href="//data.gov/">
-
     <link rel="alternate" type="application/rss+xml" title="Data.Gov 2.0 Feed" href="//data.gov/feed/">
     <link href="index_files/favicon.ico" rel="shortcut icon">
     <link rel="icon" type="image/png" href="favicon-120.png" sizes="120x120">
@@ -45,23 +60,22 @@ header("X-FRAME-OPTIONS: DENY");
     improve your experience.
 </div>
 <![endif]-->
-
 <header>
     <div class="banner navbar navbar-default navbar-static-top" role="banner">
         <div class="container">
-
             <div class="searchbox-row skip-navigation">
                 <div class="skip-link">
                     <a href="#content" title="">Jump to Content</a>
                 </div>
                 <div>
-
-
                     <form class="search-form form-inline navbar-right navbar-nav  col-sm-6 col-md-6 col-lg-6"
                           method="get" role="search" action="//catalog.data.gov/dataset">
                         <div class="input-group">
                             <label for="search-header" class="hide">Search for:</label>
-                            <input type="search" placeholder="Search Data.Gov" class="search-field form-control" name="q" value="Search Data.Gov" id="search-header" onblur="if(value=='') value = 'Search Data.Gov'" onfocus="if(value=='Search Data.Gov') value = ''">
+                            <input type="search" placeholder="Search Data.Gov" class="search-field form-control"
+                                   name="q" value="Search Data.Gov" id="search-header"
+                                   onblur="if(value=='') value = 'Search Data.Gov'"
+                                   onfocus="if(value=='Search Data.Gov') value = ''">
                 <span class="input-group-btn">
                 <button type="submit" class="search-submit btn btn-default">
                     <img alt="search" src="index_files/search-icon.png" height="15px" width="15px">
@@ -72,7 +86,6 @@ header("X-FRAME-OPTIONS: DENY");
                     </form>
                 </div>
             </div>
-
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -82,36 +95,25 @@ header("X-FRAME-OPTIONS: DENY");
                 </button>
                 <a class="navbar-brand" href="//www.data.gov">Data.Gov 2.0</a>
             </div>
-
             <nav class="collapse navbar-collapse" role="navigation">
                 <ul id="menu-primary-navigation" class="nav navbar-nav navbar-right">
                 </ul>
             </nav>
-
         </div>
     </div>
-
-
     <div class="header banner page-heading">
         <div class="container">
             <div class="page-header">
                 <h1>
                     LABS.DATA.GOV </h1>
-
-
             </div>
         </div>
     </div>
-
-
 </header>
-
-
 <div role="document">
     <div class="content">
         <main class="main" role="main">
             <div class="wrap container">
-
                 <div class="gutter inner clearfix">
                     <div class="content clearfix">
                         <!-- static content begin -->
@@ -121,7 +123,6 @@ header("X-FRAME-OPTIONS: DENY");
                             services and lightweight, open source code to provide powerful
                             functionality. Agencies are encouraged to improve any project and
                             submit pull requests in order to share the improvements with others.</p>
-
                         <!-------------------------------Catalog Generator----------------------------------->
                         <h2 style="font-size:25px;">Catalog Generator<a name="generator"></a></h2>
 
@@ -131,7 +132,6 @@ header("X-FRAME-OPTIONS: DENY");
                                     Documentation</a></li>
                             <li><a href="//project-open-data.github.com/catalog-generator/">Hosted Tool</a></li>
                         </ul>
-
                         <!-----------------------------Catalog Validator------------------------------------->
                         <h2 style="font-size:25px;">Catalog Validator<a name="validator"></a></h2>
 
@@ -141,7 +141,6 @@ header("X-FRAME-OPTIONS: DENY");
                                     Documentation</a></li>
                             <li><a href="//project-open-data.github.com/json-validator/">Hosted Tool</a></li>
                         </ul>
-
                         <!-------------------------------CSV-to-API----------------------------------->
                         <h2 style="font-size:25px;">CSV-to-API<a name="csv-to-api"></a></h2>
 
@@ -151,7 +150,6 @@ header("X-FRAME-OPTIONS: DENY");
                             </li>
                             <li><a href="/csv-to-api/">Hosted Tool</a></li>
                         </ul>
-
                         <!--------------------------------DataBeam---------------------------------->
                         <h2 style="font-size:25px;">DataBeam<a name="data-beam"></a></h2>
 
@@ -165,7 +163,6 @@ header("X-FRAME-OPTIONS: DENY");
                             <li><a href="//www.databeam.org/">Remote Hosted Tool</a></li>
                             <li><a href="/databeam/">Hosted Tool</a></li>
                         </ul>
-
                         <!------------------------------DB-to-API------------------------------------>
                         <h2 style="font-size:25px;">DB-to-API<a name="db-to-api"></a></h2>
 
@@ -175,7 +172,6 @@ header("X-FRAME-OPTIONS: DENY");
                             </li>
                             <li><a href="/db-to-api/readme.md">Hosted Tool</a></li>
                         </ul>
-
                         <!--------------------------------PDF-Filler---------------------------------->
                         <h2 style="font-size:25px;">PDF-Filler<a name="pdf-filler"></a></h2>
 
@@ -188,7 +184,6 @@ header("X-FRAME-OPTIONS: DENY");
                             </li>
                             <li><a href="/pdf-filler/">Hosted Tool</a></li>
                         </ul>
-
                         <!-------------------------------Simple API----------------------------------->
                         <h2 style="font-size:25px;">Simple API<a name="simple-api"></a></h2>
 
@@ -205,65 +200,48 @@ header("X-FRAME-OPTIONS: DENY");
                             <li><a href="/simple-api/api-offices/">Hosted Tool</a></li>
                             <li><a href="//simple-api.github.io/api-offices/">Remote Hosted Tool</a></li>
                         </ul>
-
                     </div>
                     <!-- /main-wrapper -->
-
                 </div>
                 <!--/.container-->      </div>
         </main>
         <!-- /.main -->
-
-
     </div>
     <!-- /.content -->
 </div>
 <!-- /.wrap -->
-
 <footer class="content-info" role="contentinfo">
-
     <div class="container">
-
-
         <div class="row">
-
             <!--
             <div class="col-lg-4">
                     <p>&copy; 2013 Data.Gov 2.0</p>
     </div>
     -->
-
-
             <div class="col-md-4 col-lg-4">
-
-
                 <form action="//catalog.data.gov/dataset" class="search-form form-inline" method="get" role="search">
                     <div class="input-group">
                         <label for="search-header" class="hide">Search for:</label>
-
-                        <input type="search" placeholder="Search Data.Gov" class="search-field form-control" name="q" value="Search Data.Gov" id="search-header" onblur="if(value=='') value = 'Search Data.Gov'" onfocus="if(value=='Search Data.Gov') value = ''">
+                        <input type="search" placeholder="Search Data.Gov" class="search-field form-control" name="q"
+                               value="Search Data.Gov" id="search-header"
+                               onblur="if(value=='') value = 'Search Data.Gov'"
+                               onfocus="if(value=='Search Data.Gov') value = ''">
       <span class="input-group-btn">
       <button type="submit" class="search-submit btn btn-default">
           <img alt="search" src="index_files/search-icon.png" height="15px" width="15px">
           <span class="sr-only">Search</span>
       </button>
     </span>
-
                     </div>
                 </form>
-
                 <div class="footer-logo">
                     <a class="logo-brand" href="//data.gov/">Data.Gov 2.0</a>
                 </div>
-
             </div>
-
             <nav class="col-md-2 col-lg-2" role="navigation">
                 <ul id="menu-primary-navigation-1" class="nav">
                 </ul>
             </nav>
-
-
             <nav class="col-md-2 col-lg-2" role="navigation">
                 <ul class="nav" id="menu-footer">
                 </ul>
@@ -281,9 +259,7 @@ header("X-FRAME-OPTIONS: DENY");
         </div>
     </div>
 </footer>
-
 <script type="text/javascript" src="index_files/q-a-plus.js"></script>
-
 </body>
 <script type="text/javascript">
     (function ($) {
@@ -351,7 +327,6 @@ header("X-FRAME-OPTIONS: DENY");
         });
     })(jQuery);
     // fix for dynamic menu to check current domain and assign menu
-
     jQuery(window).load(function () {
         if (window.location.hostname === 'labs.data.gov') {
             var linkRewriter = function (a, b) {
@@ -359,161 +334,67 @@ header("X-FRAME-OPTIONS: DENY");
                     $(this).attr('href', $(this).attr('href').replace(a, b));
                 });
             }
-
             linkRewriter("next.data.gov", "data.gov");
         }
     });
-
-
     jQuery(function ($) {
         jQuery(window).load(function () {
-           /* $("#menu-primary-navigation .dropdown").click(function () {
-
-                $("#menu-primary-navigation .dropdown-menu").toggle();
-
-            });
-            $("#menu-primary-navigation-1 .dropdown").click(function () {
-
-                $("#menu-primary-navigation-1 .dropdown-menu").toggle();
-
-            });*/
-            jQuery("#menu-primary-navigation .dropdown-toggle").click(function()
-            {
-
-                var X=jQuery("#menu-primary-navigation .dropdown-toggle").attr('id');
-                $("#menu-primary-navigation .dropdown-toggle").css("border-bottom","5px solid #DDE5ED");
-                if(X==1)
-
-                {
-
+            /* $("#menu-primary-navigation .dropdown").click(function () {
+             $("#menu-primary-navigation .dropdown-menu").toggle();
+             });
+             $("#menu-primary-navigation-1 .dropdown").click(function () {
+             $("#menu-primary-navigation-1 .dropdown-menu").toggle();
+             });*/
+            jQuery("#menu-primary-navigation .dropdown-toggle").click(function () {
+                var X = jQuery("#menu-primary-navigation .dropdown-toggle").attr('id');
+                $("#menu-primary-navigation .dropdown-toggle").css("border-bottom", "5px solid #DDE5ED");
+                if (X == 1) {
                     jQuery("#menu-primary-navigation .dropdown-menu").hide();
-
                     jQuery("#menu-primary-navigation .dropdown-toggle").attr('id', '0');
-
                 }
-
-                else
-
-                {
-
+                else {
                     jQuery("#menu-primary-navigation .dropdown-menu").show();
-
                     jQuery("#menu-primary-navigation .dropdown-toggle").attr('id', '1');
-
                 }
-
-
-
             });
-
-
-
 //Mouse click on sub menu
-
-            jQuery("#menu-primary-navigation .dropdown-menu").click(function()
-
-            {
-
+            jQuery("#menu-primary-navigation .dropdown-menu").click(function () {
                 return false
-
             });
-
-
-
 //Mouse click on my account link
-
-            jQuery("#menu-primary-navigation .dropdown-toggle").mouseup(function()
-
-            {
-
+            jQuery("#menu-primary-navigation .dropdown-toggle").mouseup(function () {
                 return false
-
             });
-
-
-
-
-
 //Document Click
-
-            jQuery(document).mouseup(function()
-
-            {
-
+            jQuery(document).mouseup(function () {
                 jQuery("#menu-primary-navigation .dropdown-menu").hide();
-                jQuery("#menu-primary-navigation .dropdown-toggle").css("border-bottom","0");
+                jQuery("#menu-primary-navigation .dropdown-toggle").css("border-bottom", "0");
                 jQuery("#menu-primary-navigation .dropdown-toggle").attr('id', '');
-
             });
-            jQuery("#menu-primary-navigation-1 .dropdown-toggle").click(function()
-            {
-
-                var X=jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id');
-
-                if(X==1)
-
-                {
-
+            jQuery("#menu-primary-navigation-1 .dropdown-toggle").click(function () {
+                var X = jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id');
+                if (X == 1) {
                     jQuery("#menu-primary-navigation-1 .dropdown-menu").hide();
-
                     jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id', '0');
-
                 }
-
-                else
-
-                {
-
+                else {
                     jQuery("#menu-primary-navigation-1 .dropdown-menu").show();
-
                     jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id', '1');
-
                 }
-
-
-
             });
-
-
-
 //Mouse click on sub menu
-
-            jQuery("#menu-primary-navigation-1 .dropdown-menu").click(function()
-
-            {
-
+            jQuery("#menu-primary-navigation-1 .dropdown-menu").click(function () {
                 return false
-
             });
-
-
-
 //Mouse click on my account link
-
-            jQuery("#menu-primary-navigation-1 .dropdown-toggle").mouseup(function()
-
-            {
-
+            jQuery("#menu-primary-navigation-1 .dropdown-toggle").mouseup(function () {
                 return false
-
             });
-
-
-
-
-
 //Document Click
-
-            jQuery(document).mouseup(function()
-
-            {
-
+            jQuery(document).mouseup(function () {
                 jQuery("#menu-primary-navigation-1 .dropdown-menu").hide();
-
                 jQuery("#menu-primary-navigation-1 .dropdown-toggle").attr('id', '');
-
             });
-
         });
     });
 </script>
