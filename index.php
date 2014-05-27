@@ -6,14 +6,15 @@ if (isset($_SERVER["SERVER_NAME"])) {
             case 'data-labs-dev.reisys.com':
                 header('Location: http://dev-datagov.reisys.com/labs', true, 301);
                 exit;
-            case 'labs.data.gov':
-                header('Location: https://www.data.gov/labs', true, 301);
-                exit;
             case 'labs-staging.data.gov':
                 header('Location: https://staging.data.gov/labs', true, 301);
                 exit;
             case 'local.labs.data.gov':
                 header('Location: http://local.data.gov/labs', true, 301);
+                exit;
+            case 'labs.data.gov':
+            default:
+                header('Location: https://www.data.gov/labs', true, 301);
                 exit;
         }
     }
