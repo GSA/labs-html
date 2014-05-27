@@ -9,6 +9,9 @@ if (isset($_SERVER["SERVER_NAME"])) {
             case 'labs.data.gov':
                 header('Location: https://www.data.gov/labs', true, 301);
                 exit;
+            case 'labs-staging.data.gov':
+                header('Location: https://staging.data.gov/labs', true, 301);
+                exit;
             case 'local.labs.data.gov':
                 header('Location: http://local.data.gov/labs', true, 301);
                 exit;
