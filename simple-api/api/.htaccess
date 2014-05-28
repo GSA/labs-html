@@ -1,7 +1,0 @@
-#Options FollowSymLinks -Indexes
-
-RewriteEngine On
-RedirectMatch 404 "(?:.*)/(?:\.git|file_or_dir)(?:/.*)?$"
-RewriteBase /simple-api/api/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [QSA,L]
