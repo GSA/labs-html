@@ -2,17 +2,16 @@
 header("X-FRAME-OPTIONS: DENY");
 if (isset($_SERVER["SERVER_NAME"])) {
     if (!isset($_GET['noredirect'])) {
-        switch ($_SERVER["SERVER_NAME"]) {
-            case 'data-labs-dev.reisys.com':
+        switch (true) {
+            case (bool)strpos($_SERVER["SERVER_NAME"],'ata-labs-dev'):
                 header('Location: http://dev-datagov.reisys.com/labs', true, 301);
                 exit;
-            case 'labs-staging.data.gov':
+            case (bool)strpos($_SERVER["SERVER_NAME"],'-staging.data'):
                 header('Location: https://staging.data.gov/labs', true, 301);
                 exit;
-            case 'local.labs.data.gov':
+            case (bool)strpos($_SERVER["SERVER_NAME"],'cal.labs.data'):
                 header('Location: http://local.data.gov/labs', true, 301);
                 exit;
-            case 'labs.data.gov':
             default:
                 header('Location: https://www.data.gov/labs', true, 301);
                 exit;
@@ -201,7 +200,6 @@ if (isset($_SERVER["SERVER_NAME"])) {
                         </p>
                         <ul>
                             <li><a href="//github.com/simple-api">Source Code and Documentation</a></li>
-                            <li><a href="/simple-api/api-offices/">Hosted Tool</a></li>
                             <li><a href="//simple-api.github.io/api-offices/">Remote Hosted Tool</a></li>
                         </ul>
                     </div>
